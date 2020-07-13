@@ -27,13 +27,15 @@ for (i of li) {
 
 //Adding books
 
-const addform = document.forms['add-book'];
-addform.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const data = addform.querySelector('input[type = "text"]').value;
 
-    //creating elements
+function addbook(){
 
+   
+
+
+    
+    const data=document.getElementById("addbookvalue").value;
+    console.log(data)
     const newli = document.createElement('li');
     const span1 = document.createElement('span');
     const span2 = document.createElement('span');
@@ -59,7 +61,7 @@ addform.addEventListener('submit', function(e) {
 
 
     console.log(grab);
-})
+}
 
 
 //for hide books
